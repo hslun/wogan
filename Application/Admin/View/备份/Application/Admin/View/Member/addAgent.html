@@ -1,0 +1,33 @@
+<table id="test">
+		<tr>
+			<td>姓名</td>
+			<td>手机号</td>
+			<td>代理省份</td>
+			<td>代理市</td>
+			<td>代理县</td>
+			<td>开始时间</td>
+			<td>结束时间</td>
+			<td>角色</td>
+			<td>是否开通</td>
+		</tr>
+		<tr id="b">
+			<td class="td"><input type="text" name="name"></td>
+			<td class="td"><input type="text" name="tel"></td>
+			<td class="td"><input type="text" name="provinceid"></td>
+			<td class="td"><input type="text" name="cityid"></td>
+			<td class="td"><input type="text" name="districtid"></td>
+			<td class="td"><input type="text" name="start_date"></td>
+			<td class="td"><input type="text" name="end_date"></td>
+			<td class="td"><input type="text" name="is_manager"></td>
+			<td class="td"><input type="text" name="flag"></td>
+		</tr>
+	</table>
+	<input type="button" onclick="addTable()" value="+">
+	<button type="submit" class="button button-primary" style="margin: 5px 400px;" >保存</button>
+
+
+
+	<script type="text/javascript">function addTable(){
+document.getElementById("test").appendChild(document.getElementById("b").cloneNode(true));
+      }
+</script>

@@ -1,0 +1,1680 @@
+[ 2015-08-09T23:42:11+08:00 ] 127.0.0.1 /index.php/admin/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+
+[ 2015-08-09T23:45:27+08:00 ] 127.0.0.1 /index.php/admin/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+
+[ 2015-08-09T23:45:42+08:00 ] 127.0.0.1 /index.php/admin/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+SQL: SHOW COLUMNS FROM `yx_order` [ RunTime:0.004019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 1   [ RunTime:0.003754s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 0,15   [ RunTime:0.004979s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 1   [ RunTime:0.005261s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 0,15   [ RunTime:0.005210s ]
+NOTIC: [8] Undefined index: ordernumber D:\PHP\amp\app\Application\Admin\Model\OrderModel.class.php 第 160 行.
+NOTIC: [8] Undefined index: city D:\PHP\amp\app\Application\Admin\Model\OrderModel.class.php 第 162 行.
+NOTIC: [8] Undefined index: county D:\PHP\amp\app\Application\Admin\Model\OrderModel.class.php 第 163 行.
+NOTIC: [8] Undefined variable: where D:\PHP\amp\app\Application\Admin\Model\OrderModel.class.php 第 169 行.
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id  LIMIT 1   [ RunTime:0.014080s ]
+SQL: SELECT b.nikename FROM yx_order a LEFT JOIN yx_member b ON a.tomemberid=b.id
+                LEFT JOIN yx_pcd_city c ON a.cityid=c.id
+                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                  WHERE ( a.ordernumber = null ) OR ( c.CityName = null ) OR ( d.DistrictName = null ) LIMIT 0,15   [ RunTime:0.031993s ]
+SQL: SELECT a.*,b.nikename,c.id,d.id FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id
+                                LEFT JOIN yx_pcd_city c ON a.cityid=c.id
+                                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                                  WHERE ( a.ordernumber = null ) OR ( c.CityName = null ) OR ( d.DistrictName = null ) LIMIT 0,15   [ RunTime:0.019378s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+NOTIC: [8] Undefined variable: province D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 68 行.
+NOTIC: [8] Undefined variable: city D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 71 行.
+NOTIC: [8] Undefined variable: county D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 72 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 107 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006511s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006570s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000612s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000659s ]
+
+[ 2015-08-09T23:45:45+08:00 ] 127.0.0.1 /index.php/admin/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+SQL: SHOW COLUMNS FROM `yx_order` [ RunTime:0.003468s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 1   [ RunTime:0.001740s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 0,15   [ RunTime:0.002187s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 1   [ RunTime:0.002128s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 0,15   [ RunTime:0.002090s ]
+SQL: SELECT b.id FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id  WHERE ( b.nikename = '乔布斯' ) GROUP BY b.id LIMIT 1   [ RunTime:0.005448s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id  WHERE ( a.frommemberid = '5' ) LIMIT 1   [ RunTime:0.001881s ]
+SQL: SELECT b.nikename,b.id FROM yx_order a LEFT JOIN yx_member b ON a.tomemberid=b.id
+                LEFT JOIN yx_pcd_city c ON a.cityid=c.id
+                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                  WHERE ( a.frommemberid = '5' ) LIMIT 0,15   [ RunTime:0.000492s ]
+SQL: SELECT a.*,b.nikename,c.CityName,d.DistrictName FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id
+                                LEFT JOIN yx_pcd_city c ON a.cityid=b.id
+                                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                                  WHERE ( b.nikename = '乔布斯' ) OR ( c.CityName = '' ) OR ( d.DistrictName = '' ) LIMIT 0,15   [ RunTime:0.015125s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+NOTIC: [8] Undefined variable: province D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 68 行.
+NOTIC: [8] Undefined variable: city D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 71 行.
+NOTIC: [8] Undefined variable: county D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 72 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 107 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005688s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005732s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000508s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000568s ]
+
+[ 2015-08-09T23:47:31+08:00 ] 127.0.0.1 /index.php/admin/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000658s ]
+SQL: SHOW COLUMNS FROM `yx_order` [ RunTime:0.013841s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 1   [ RunTime:0.006906s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 0,15   [ RunTime:0.005580s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 1   [ RunTime:0.005272s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 0,15   [ RunTime:0.005174s ]
+SQL: SELECT b.id FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id  WHERE ( b.nikename = '乔布斯' ) GROUP BY b.id LIMIT 1   [ RunTime:0.014179s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id  WHERE ( a.frommemberid = '5' ) LIMIT 1   [ RunTime:0.004542s ]
+SQL: SELECT b.nikename,b.id FROM yx_order a LEFT JOIN yx_member b ON a.tomemberid=b.id
+                LEFT JOIN yx_pcd_city c ON a.cityid=c.id
+                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                  WHERE ( a.frommemberid = '5' ) LIMIT 0,15   [ RunTime:0.001335s ]
+SQL: SELECT a.*,b.nikename,c.CityName,d.DistrictName FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id
+                                LEFT JOIN yx_pcd_city c ON a.cityid=b.id
+                                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                                  WHERE ( b.nikename = '乔布斯' ) OR ( c.CityName = '' ) OR ( d.DistrictName = '' ) LIMIT 0,15   [ RunTime:0.042128s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+NOTIC: [8] Undefined variable: province D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 68 行.
+NOTIC: [8] Undefined variable: city D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 71 行.
+NOTIC: [8] Undefined variable: county D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 72 行.
+NOTIC: [8] Undefined variable: tonm D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined variable: tonm D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined variable: tonm D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined variable: tonm D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined variable: tonm D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined variable: tonm D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined variable: tonm D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined variable: tonm D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined variable: tonm D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined variable: tonm D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined variable: tonm D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined variable: tonm D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined variable: tonm D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined variable: tonm D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined variable: tonm D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016316s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000864s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP\amp\app\Application\Admin\Controller\OrderController.class.php:12) D:\PHP\amp\app\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP\amp\app\Application\Admin\Controller\OrderController.class.php:12) D:\PHP\amp\app\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP\amp\app\Application\Admin\Controller\OrderController.class.php:12) D:\PHP\amp\app\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001288s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001496s ]
+
+[ 2015-08-09T23:48:05+08:00 ] 127.0.0.1 /index.php/admin/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000601s ]
+SQL: SHOW COLUMNS FROM `yx_order` [ RunTime:0.013324s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 1   [ RunTime:0.008228s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 0,15   [ RunTime:0.008358s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 1   [ RunTime:0.005058s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 0,15   [ RunTime:0.005490s ]
+NOTIC: [8] Undefined index: ordernumber D:\PHP\amp\app\Application\Admin\Model\OrderModel.class.php 第 160 行.
+NOTIC: [8] Undefined index: city D:\PHP\amp\app\Application\Admin\Model\OrderModel.class.php 第 162 行.
+NOTIC: [8] Undefined index: county D:\PHP\amp\app\Application\Admin\Model\OrderModel.class.php 第 163 行.
+NOTIC: [8] Undefined variable: where D:\PHP\amp\app\Application\Admin\Model\OrderModel.class.php 第 169 行.
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id  LIMIT 1   [ RunTime:0.014406s ]
+SQL: SELECT b.nikename FROM yx_order a LEFT JOIN yx_member b ON a.tomemberid=b.id
+                LEFT JOIN yx_pcd_city c ON a.cityid=c.id
+                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                  WHERE ( a.ordernumber = null ) OR ( c.CityName = null ) OR ( d.DistrictName = null ) LIMIT 0,15   [ RunTime:0.035442s ]
+SQL: SELECT a.*,b.nikename,c.id,d.id FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id
+                                LEFT JOIN yx_pcd_city c ON a.cityid=c.id
+                                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                                  WHERE ( a.ordernumber = null ) OR ( c.CityName = null ) OR ( d.DistrictName = null ) LIMIT 0,15   [ RunTime:0.016925s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] Undefined variable: province D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 68 行.
+NOTIC: [8] Undefined variable: city D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 71 行.
+NOTIC: [8] Undefined variable: county D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 72 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 107 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008693s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008784s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000568s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000616s ]
+
+[ 2015-08-09T23:48:09+08:00 ] 127.0.0.1 /index.php/admin/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000861s ]
+SQL: SHOW COLUMNS FROM `yx_order` [ RunTime:0.013314s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 1   [ RunTime:0.007130s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 0,15   [ RunTime:0.004550s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 1   [ RunTime:0.004793s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 0,15   [ RunTime:0.004750s ]
+SQL: SELECT b.id FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id  WHERE ( b.nikename = '乔布斯' ) GROUP BY b.id LIMIT 1   [ RunTime:0.012848s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id  WHERE ( a.frommemberid = '5' ) LIMIT 1   [ RunTime:0.004034s ]
+SQL: SELECT b.nikename,b.id FROM yx_order a LEFT JOIN yx_member b ON a.tomemberid=b.id
+                LEFT JOIN yx_pcd_city c ON a.cityid=c.id
+                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                  WHERE ( a.frommemberid = '5' ) LIMIT 0,15   [ RunTime:0.001248s ]
+SQL: SELECT a.*,b.nikename,c.CityName,d.DistrictName FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id
+                                LEFT JOIN yx_pcd_city c ON a.cityid=b.id
+                                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                                  WHERE ( b.nikename = '乔布斯' ) OR ( c.CityName = '请选择市' ) OR ( d.DistrictName = '请选择县/区' ) LIMIT 0,15   [ RunTime:0.038281s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+NOTIC: [8] Undefined variable: province D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 68 行.
+NOTIC: [8] Undefined variable: city D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 71 行.
+NOTIC: [8] Undefined variable: county D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 72 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015249s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015345s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000779s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000874s ]
+
+[ 2015-08-09T23:48:44+08:00 ] 127.0.0.1 /index.php/admin/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+SQL: SHOW COLUMNS FROM `yx_order` [ RunTime:0.010690s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 1   [ RunTime:0.005047s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 0,15   [ RunTime:0.004169s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 1   [ RunTime:0.004727s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 0,15   [ RunTime:0.004301s ]
+NOTIC: [8] Undefined index: ordernumber D:\PHP\amp\app\Application\Admin\Model\OrderModel.class.php 第 160 行.
+NOTIC: [8] Undefined index: city D:\PHP\amp\app\Application\Admin\Model\OrderModel.class.php 第 162 行.
+NOTIC: [8] Undefined index: county D:\PHP\amp\app\Application\Admin\Model\OrderModel.class.php 第 163 行.
+NOTIC: [8] Undefined variable: where D:\PHP\amp\app\Application\Admin\Model\OrderModel.class.php 第 169 行.
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id  LIMIT 1   [ RunTime:0.006463s ]
+SQL: SELECT b.nikename FROM yx_order a LEFT JOIN yx_member b ON a.tomemberid=b.id
+                LEFT JOIN yx_pcd_city c ON a.cityid=c.id
+                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                  WHERE ( a.ordernumber = null ) OR ( c.CityName = null ) OR ( d.DistrictName = null ) LIMIT 0,15   [ RunTime:0.019289s ]
+SQL: SELECT a.*,b.nikename,c.id,d.id FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id
+                                LEFT JOIN yx_pcd_city c ON a.cityid=c.id
+                                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                                  WHERE ( a.ordernumber = null ) OR ( c.CityName = null ) OR ( d.DistrictName = null ) LIMIT 0,15   [ RunTime:0.012262s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+NOTIC: [8] Undefined variable: province D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 68 行.
+NOTIC: [8] Undefined variable: city D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 71 行.
+NOTIC: [8] Undefined variable: county D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 72 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 107 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007056s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000488s ]
+
+[ 2015-08-09T23:48:47+08:00 ] 127.0.0.1 /index.php/admin/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+SQL: SHOW COLUMNS FROM `yx_order` [ RunTime:0.014064s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 1   [ RunTime:0.006839s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 0,15   [ RunTime:0.007488s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 1   [ RunTime:0.010058s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 0,15   [ RunTime:0.007591s ]
+SQL: SELECT b.id FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id  WHERE ( b.nikename = '乔布斯' ) GROUP BY b.id LIMIT 1   [ RunTime:0.010451s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id  WHERE ( a.frommemberid = '5' ) LIMIT 1   [ RunTime:0.003181s ]
+SQL: SELECT b.nikename,b.id FROM yx_order a LEFT JOIN yx_member b ON a.tomemberid=b.id
+                LEFT JOIN yx_pcd_city c ON a.cityid=c.id
+                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                  WHERE ( a.frommemberid = '5' ) LIMIT 0,15   [ RunTime:0.000883s ]
+SQL: SELECT a.*,b.nikename,c.CityName,d.DistrictName FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id
+                                LEFT JOIN yx_pcd_city c ON a.cityid=b.id
+                                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                                  WHERE ( b.nikename = '乔布斯' ) OR ( c.CityName = '' ) OR ( d.DistrictName = '' ) LIMIT 0,15   [ RunTime:0.023360s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+NOTIC: [8] Undefined variable: province D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 68 行.
+NOTIC: [8] Undefined variable: city D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 71 行.
+NOTIC: [8] Undefined variable: county D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 72 行.
+NOTIC: [8] Undefined index: toname D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 107 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008396s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008450s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000582s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000651s ]
+
+[ 2015-08-09T23:49:33+08:00 ] 127.0.0.1 /index.php/admin/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+SQL: SHOW COLUMNS FROM `yx_order` [ RunTime:0.014661s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 1   [ RunTime:0.007415s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 0,15   [ RunTime:0.008164s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 1   [ RunTime:0.008223s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 0,15   [ RunTime:0.006011s ]
+SQL: SELECT b.id FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id  WHERE ( b.nikename = '乔布斯' ) GROUP BY b.id LIMIT 1   [ RunTime:0.012467s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id  WHERE ( a.frommemberid = '5' ) LIMIT 1   [ RunTime:0.004191s ]
+SQL: SELECT b.nikename,b.id FROM yx_order a LEFT JOIN yx_member b ON a.tomemberid=b.id
+                LEFT JOIN yx_pcd_city c ON a.cityid=c.id
+                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                  WHERE ( a.frommemberid = '5' ) LIMIT 0,15   [ RunTime:0.001013s ]
+SQL: SELECT a.*,b.nikename,c.CityName,d.DistrictName FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id
+                                LEFT JOIN yx_pcd_city c ON a.cityid=b.id
+                                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                                  WHERE ( b.nikename = '乔布斯' ) OR ( c.CityName = '' ) OR ( d.DistrictName = '' ) LIMIT 0,15   [ RunTime:0.022442s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+NOTIC: [8] Undefined variable: province D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 68 行.
+NOTIC: [8] Undefined variable: city D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 71 行.
+NOTIC: [8] Undefined variable: county D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 72 行.
+NOTIC: [8] Undefined index: toname D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 107 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012270s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012404s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000902s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP\amp\app\Application\Admin\Controller\OrderController.class.php:12) D:\PHP\amp\app\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP\amp\app\Application\Admin\Controller\OrderController.class.php:12) D:\PHP\amp\app\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP\amp\app\Application\Admin\Controller\OrderController.class.php:12) D:\PHP\amp\app\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000936s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001073s ]
+
+[ 2015-08-09T23:50:27+08:00 ] 127.0.0.1 /index.php/admin/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+SQL: SHOW COLUMNS FROM `yx_order` [ RunTime:0.008804s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 1   [ RunTime:0.006301s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 0,15   [ RunTime:0.006097s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 1   [ RunTime:0.006297s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 0,15   [ RunTime:0.007547s ]
+NOTIC: [8] Undefined index: ordernumber D:\PHP\amp\app\Application\Admin\Model\OrderModel.class.php 第 160 行.
+NOTIC: [8] Undefined index: city D:\PHP\amp\app\Application\Admin\Model\OrderModel.class.php 第 162 行.
+NOTIC: [8] Undefined index: county D:\PHP\amp\app\Application\Admin\Model\OrderModel.class.php 第 163 行.
+NOTIC: [8] Undefined variable: where D:\PHP\amp\app\Application\Admin\Model\OrderModel.class.php 第 169 行.
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id  LIMIT 1   [ RunTime:0.008768s ]
+SQL: SELECT b.nikename FROM yx_order a LEFT JOIN yx_member b ON a.tomemberid=b.id
+                LEFT JOIN yx_pcd_city c ON a.cityid=c.id
+                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                  WHERE ( a.ordernumber = null ) OR ( c.CityName = null ) OR ( d.DistrictName = null ) LIMIT 0,15   [ RunTime:0.022189s ]
+SQL: SELECT a.*,b.nikename,c.id,d.id FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id
+                                LEFT JOIN yx_pcd_city c ON a.cityid=c.id
+                                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                                  WHERE ( a.ordernumber = null ) OR ( c.CityName = null ) OR ( d.DistrictName = null ) LIMIT 0,15   [ RunTime:0.012373s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+NOTIC: [8] Undefined variable: province D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 68 行.
+NOTIC: [8] Undefined variable: city D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 71 行.
+NOTIC: [8] Undefined variable: county D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 72 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 107 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006361s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006429s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000606s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000655s ]
+
+[ 2015-08-09T23:50:31+08:00 ] 127.0.0.1 /index.php/admin/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000781s ]
+SQL: SHOW COLUMNS FROM `yx_order` [ RunTime:0.003651s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 1   [ RunTime:0.001791s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 0,15   [ RunTime:0.002374s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 1   [ RunTime:0.002084s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 0,15   [ RunTime:0.002222s ]
+SQL: SELECT b.id FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id  WHERE ( b.nikename = '乔布斯' ) GROUP BY b.id LIMIT 1   [ RunTime:0.005169s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id  WHERE ( a.frommemberid = '5' ) LIMIT 1   [ RunTime:0.001779s ]
+SQL: SELECT b.nikename,b.id FROM yx_order a LEFT JOIN yx_member b ON a.tomemberid=b.id
+                LEFT JOIN yx_pcd_city c ON a.cityid=c.id
+                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                  WHERE ( a.frommemberid = '5' ) LIMIT 0,15   [ RunTime:0.000670s ]
+SQL: SELECT a.*,b.nikename,c.CityName,d.DistrictName FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id
+                                LEFT JOIN yx_pcd_city c ON a.cityid=b.id
+                                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                                  WHERE ( b.nikename = '乔布斯' ) OR ( c.CityName = '请选择市' ) OR ( d.DistrictName = '请选择县/区' ) LIMIT 0,15   [ RunTime:0.016094s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8] Undefined variable: province D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 68 行.
+NOTIC: [8] Undefined variable: city D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 71 行.
+NOTIC: [8] Undefined variable: county D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 72 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 117 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007688s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000650s ]
+
+[ 2015-08-09T23:51:15+08:00 ] 127.0.0.1 /index.php/admin/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000596s ]
+SQL: SHOW COLUMNS FROM `yx_order` [ RunTime:0.004200s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 1   [ RunTime:0.001765s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 0,15   [ RunTime:0.002275s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 1   [ RunTime:0.002271s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 0,15   [ RunTime:0.002133s ]
+NOTIC: [8] Undefined index: ordernumber D:\PHP\amp\app\Application\Admin\Model\OrderModel.class.php 第 160 行.
+NOTIC: [8] Undefined index: city D:\PHP\amp\app\Application\Admin\Model\OrderModel.class.php 第 162 行.
+NOTIC: [8] Undefined index: county D:\PHP\amp\app\Application\Admin\Model\OrderModel.class.php 第 163 行.
+NOTIC: [8] Undefined variable: where D:\PHP\amp\app\Application\Admin\Model\OrderModel.class.php 第 169 行.
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id  LIMIT 1   [ RunTime:0.005413s ]
+SQL: SELECT b.nikename FROM yx_order a LEFT JOIN yx_member b ON a.tomemberid=b.id
+                LEFT JOIN yx_pcd_city c ON a.cityid=c.id
+                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                  WHERE ( a.ordernumber = null ) OR ( c.CityName = null ) OR ( d.DistrictName = null ) LIMIT 0,15   [ RunTime:0.015250s ]
+SQL: SELECT a.*,b.nikename,c.id,d.id FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id
+                                LEFT JOIN yx_pcd_city c ON a.cityid=c.id
+                                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                                  WHERE ( a.ordernumber = null ) OR ( c.CityName = null ) OR ( d.DistrictName = null ) LIMIT 0,15   [ RunTime:0.012218s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+NOTIC: [8] Undefined variable: province D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 68 行.
+NOTIC: [8] Undefined variable: city D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 71 行.
+NOTIC: [8] Undefined variable: county D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 72 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 106 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006183s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006242s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000539s ]
+
+[ 2015-08-09T23:51:19+08:00 ] 127.0.0.1 /index.php/admin/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+SQL: SHOW COLUMNS FROM `yx_order` [ RunTime:0.008912s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 1   [ RunTime:0.004165s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 0,15   [ RunTime:0.004394s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 1   [ RunTime:0.004733s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 0,15   [ RunTime:0.005474s ]
+SQL: SELECT b.id FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id  WHERE ( b.nikename = '乔布斯' ) GROUP BY b.id LIMIT 1   [ RunTime:0.011661s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id  WHERE ( a.frommemberid = '5' ) LIMIT 1   [ RunTime:0.002153s ]
+SQL: SELECT b.nikename,b.id FROM yx_order a LEFT JOIN yx_member b ON a.tomemberid=b.id
+                LEFT JOIN yx_pcd_city c ON a.cityid=c.id
+                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                  WHERE ( a.frommemberid = '5' ) LIMIT 0,15   [ RunTime:0.000848s ]
+SQL: SELECT a.*,b.nikename,c.CityName,d.DistrictName FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id
+                                LEFT JOIN yx_pcd_city c ON a.cityid=b.id
+                                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                                  WHERE ( b.nikename = '乔布斯' ) OR ( c.CityName = '' ) OR ( d.DistrictName = '' ) LIMIT 0,15   [ RunTime:0.018572s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Undefined variable: province D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 68 行.
+NOTIC: [8] Undefined variable: city D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 71 行.
+NOTIC: [8] Undefined variable: county D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 72 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007892s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007943s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000647s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000715s ]
+
+[ 2015-08-09T23:51:47+08:00 ] 127.0.0.1 /index.php/admin/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000670s ]
+SQL: SHOW COLUMNS FROM `yx_order` [ RunTime:0.003672s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 1   [ RunTime:0.001738s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 0,15   [ RunTime:0.002541s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 1   [ RunTime:0.002051s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 0,15   [ RunTime:0.002087s ]
+NOTIC: [8] Undefined index: ordernumber D:\PHP\amp\app\Application\Admin\Model\OrderModel.class.php 第 160 行.
+NOTIC: [8] Undefined index: city D:\PHP\amp\app\Application\Admin\Model\OrderModel.class.php 第 162 行.
+NOTIC: [8] Undefined index: county D:\PHP\amp\app\Application\Admin\Model\OrderModel.class.php 第 163 行.
+NOTIC: [8] Undefined variable: where D:\PHP\amp\app\Application\Admin\Model\OrderModel.class.php 第 169 行.
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id  LIMIT 1   [ RunTime:0.005282s ]
+SQL: SELECT b.nikename FROM yx_order a LEFT JOIN yx_member b ON a.tomemberid=b.id
+                LEFT JOIN yx_pcd_city c ON a.cityid=c.id
+                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                  WHERE ( a.ordernumber = null ) OR ( c.CityName = null ) OR ( d.DistrictName = null ) LIMIT 0,15   [ RunTime:0.014469s ]
+SQL: SELECT a.*,b.nikename,c.id,d.id FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id
+                                LEFT JOIN yx_pcd_city c ON a.cityid=c.id
+                                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                                  WHERE ( a.ordernumber = null ) OR ( c.CityName = null ) OR ( d.DistrictName = null ) LIMIT 0,15   [ RunTime:0.012144s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Undefined variable: province D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 68 行.
+NOTIC: [8] Undefined variable: city D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 71 行.
+NOTIC: [8] Undefined variable: county D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 72 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 106 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005791s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005834s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000582s ]
+
+[ 2015-08-09T23:52:06+08:00 ] 127.0.0.1 /index.php/admin/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+SQL: SHOW COLUMNS FROM `yx_order` [ RunTime:0.003995s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 1   [ RunTime:0.001727s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 0,15   [ RunTime:0.002054s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 1   [ RunTime:0.002019s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 0,15   [ RunTime:0.002042s ]
+SQL: SELECT b.id FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id  WHERE ( b.nikename = '乔布斯' ) GROUP BY b.id LIMIT 1   [ RunTime:0.005835s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id  WHERE ( a.frommemberid = '5' ) LIMIT 1   [ RunTime:0.002237s ]
+SQL: SELECT b.nikename,b.id FROM yx_order a LEFT JOIN yx_member b ON a.tomemberid=b.id
+                LEFT JOIN yx_pcd_city c ON a.cityid=c.id
+                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                  WHERE ( a.frommemberid = '5' ) LIMIT 0,15   [ RunTime:0.000591s ]
+SQL: SELECT a.*,b.nikename,c.CityName,d.DistrictName FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id
+                                LEFT JOIN yx_pcd_city c ON a.cityid=b.id
+                                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                                  WHERE ( b.nikename = '乔布斯' ) OR ( c.CityName = '' ) OR ( d.DistrictName = '' ) LIMIT 0,15   [ RunTime:0.015495s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Undefined variable: province D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 68 行.
+NOTIC: [8] Undefined variable: city D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 71 行.
+NOTIC: [8] Undefined variable: county D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 72 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008098s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008158s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000574s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000642s ]
+
+[ 2015-08-09T23:52:45+08:00 ] 127.0.0.1 /index.php/admin/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+SQL: SHOW COLUMNS FROM `yx_order` [ RunTime:0.004123s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 1   [ RunTime:0.002323s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 0,15   [ RunTime:0.002272s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 1   [ RunTime:0.002215s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 0,15   [ RunTime:0.002112s ]
+SQL: SELECT b.id FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id  WHERE ( b.nikename = '乔布斯' ) GROUP BY b.id LIMIT 1   [ RunTime:0.005478s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id  WHERE ( a.frommemberid = '5' ) LIMIT 1   [ RunTime:0.002086s ]
+SQL: SELECT b.nikename,b.id FROM yx_order a LEFT JOIN yx_member b ON a.tomemberid=b.id
+                LEFT JOIN yx_pcd_city c ON a.cityid=c.id
+                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                  WHERE ( a.frommemberid = '5' ) LIMIT 0,15   [ RunTime:0.000633s ]
+SQL: SELECT a.*,b.nikename,c.CityName,d.DistrictName FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id
+                                LEFT JOIN yx_pcd_city c ON a.cityid=b.id
+                                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                                  WHERE ( b.nikename = '乔布斯' ) OR ( c.CityName = '' ) OR ( d.DistrictName = '' ) LIMIT 0,15   [ RunTime:0.014827s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Undefined variable: province D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 68 行.
+NOTIC: [8] Undefined variable: city D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 71 行.
+NOTIC: [8] Undefined variable: county D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 72 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008213s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008261s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000703s ]
+
+[ 2015-08-09T23:53:34+08:00 ] 127.0.0.1 /index.php/admin/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+SQL: SHOW COLUMNS FROM `yx_order` [ RunTime:0.004358s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 1   [ RunTime:0.002024s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 0,15   [ RunTime:0.002200s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 1   [ RunTime:0.001867s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 0,15   [ RunTime:0.001982s ]
+NOTIC: [8] Undefined variable: where D:\PHP\amp\app\Application\Admin\Model\OrderModel.class.php 第 169 行.
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id  LIMIT 1   [ RunTime:0.005836s ]
+SQL: SELECT b.nikename FROM yx_order a LEFT JOIN yx_member b ON a.tomemberid=b.id
+                LEFT JOIN yx_pcd_city c ON a.cityid=c.id
+                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                  WHERE ( a.ordernumber = '' ) OR ( c.CityName = '北京市' ) OR ( d.DistrictName = '' ) LIMIT 0,15   [ RunTime:0.000471s ]
+SQL: SELECT a.*,b.nikename,c.id,d.id FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id
+                                LEFT JOIN yx_pcd_city c ON a.cityid=c.id
+                                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                                  WHERE ( a.ordernumber = '' ) OR ( c.CityName = '北京市' ) OR ( d.DistrictName = '' ) LIMIT 0,15   [ RunTime:0.000596s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+NOTIC: [8] Undefined variable: province D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 68 行.
+NOTIC: [8] Undefined variable: city D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 71 行.
+NOTIC: [8] Undefined variable: county D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 72 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 111 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 112 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 114 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 115 行.
+NOTIC: [8] Undefined index:  D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 116 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008223s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008271s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000573s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000664s ]
+
+[ 2015-08-09T23:55:42+08:00 ] 127.0.0.1 /index.php/admin/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000671s ]
+SQL: SHOW COLUMNS FROM `yx_order` [ RunTime:0.003922s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 1   [ RunTime:0.002128s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 0,15   [ RunTime:0.001925s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 1   [ RunTime:0.002022s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 0,15   [ RunTime:0.002242s ]
+NOTIC: [8] Undefined index: ordernumber D:\PHP\amp\app\Application\Admin\Model\OrderModel.class.php 第 160 行.
+NOTIC: [8] Undefined index: city D:\PHP\amp\app\Application\Admin\Model\OrderModel.class.php 第 162 行.
+NOTIC: [8] Undefined index: county D:\PHP\amp\app\Application\Admin\Model\OrderModel.class.php 第 163 行.
+NOTIC: [8] Undefined variable: where D:\PHP\amp\app\Application\Admin\Model\OrderModel.class.php 第 169 行.
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id  LIMIT 1   [ RunTime:0.006088s ]
+SQL: SELECT b.nikename FROM yx_order a LEFT JOIN yx_member b ON a.tomemberid=b.id
+                LEFT JOIN yx_pcd_city c ON a.cityid=c.id
+                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                  WHERE ( a.ordernumber = null ) OR ( c.CityName = null ) OR ( d.DistrictName = null ) LIMIT 0,15   [ RunTime:0.014719s ]
+SQL: SELECT a.*,b.nikename,c.id,d.id FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id
+                                LEFT JOIN yx_pcd_city c ON a.cityid=c.id
+                                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                                  WHERE ( a.ordernumber = null ) OR ( c.CityName = null ) OR ( d.DistrictName = null ) LIMIT 0,15   [ RunTime:0.012138s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+NOTIC: [8] Undefined variable: province D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 68 行.
+NOTIC: [8] Undefined variable: city D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 71 行.
+NOTIC: [8] Undefined variable: county D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 72 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 105 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006542s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000461s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000504s ]
+
+[ 2015-08-09T23:55:50+08:00 ] 127.0.0.1 /index.php/admin/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+SQL: SHOW COLUMNS FROM `yx_order` [ RunTime:0.007669s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 1   [ RunTime:0.005096s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 0,15   [ RunTime:0.004705s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 1   [ RunTime:0.004763s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 0,15   [ RunTime:0.005506s ]
+NOTIC: [8] Undefined variable: where D:\PHP\amp\app\Application\Admin\Model\OrderModel.class.php 第 169 行.
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id  LIMIT 1   [ RunTime:0.014297s ]
+SQL: SELECT b.nikename FROM yx_order a LEFT JOIN yx_member b ON a.tomemberid=b.id
+                LEFT JOIN yx_pcd_city c ON a.cityid=c.id
+                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                  WHERE ( a.ordernumber = '' ) OR ( c.CityName = '北京市' ) OR ( d.DistrictName = '' ) LIMIT 0,15   [ RunTime:0.000971s ]
+SQL: SELECT a.*,b.nikename,c.id,d.id FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id
+                                LEFT JOIN yx_pcd_city c ON a.cityid=c.id
+                                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                                  WHERE ( a.ordernumber = '' ) OR ( c.CityName = '北京市' ) OR ( d.DistrictName = '' ) LIMIT 0,15   [ RunTime:0.001248s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000261s ]
+NOTIC: [8] Undefined variable: province D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 68 行.
+NOTIC: [8] Undefined variable: city D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 71 行.
+NOTIC: [8] Undefined variable: county D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014912s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015027s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001187s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001319s ]
+
+[ 2015-08-09T23:56:54+08:00 ] 127.0.0.1 /index.php/admin/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+SQL: SHOW COLUMNS FROM `yx_order` [ RunTime:0.015775s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 1   [ RunTime:0.008853s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 0,15   [ RunTime:0.004760s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 1   [ RunTime:0.003144s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 0,15   [ RunTime:0.003555s ]
+NOTIC: [8] Undefined index: ordernumber D:\PHP\amp\app\Application\Admin\Model\OrderModel.class.php 第 160 行.
+NOTIC: [8] Undefined index: city D:\PHP\amp\app\Application\Admin\Model\OrderModel.class.php 第 162 行.
+NOTIC: [8] Undefined index: county D:\PHP\amp\app\Application\Admin\Model\OrderModel.class.php 第 163 行.
+NOTIC: [8] Undefined variable: where D:\PHP\amp\app\Application\Admin\Model\OrderModel.class.php 第 169 行.
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id  LIMIT 1   [ RunTime:0.008974s ]
+SQL: SELECT b.nikename FROM yx_order a LEFT JOIN yx_member b ON a.tomemberid=b.id
+                LEFT JOIN yx_pcd_city c ON a.cityid=c.id
+                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                  WHERE ( a.ordernumber = null ) OR ( c.CityName = null ) OR ( d.DistrictName = null ) LIMIT 0,15   [ RunTime:0.018739s ]
+SQL: SELECT a.*,b.nikename,c.id,d.id FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id
+                                LEFT JOIN yx_pcd_city c ON a.cityid=c.id
+                                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                                  WHERE ( a.ordernumber = null ) OR ( c.CityName = null ) OR ( d.DistrictName = null ) LIMIT 0,15   [ RunTime:0.012086s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Undefined variable: province D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 68 行.
+NOTIC: [8] Undefined variable: city D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 71 行.
+NOTIC: [8] Undefined variable: county D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 72 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 105 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005901s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005952s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000532s ]
+
+[ 2015-08-09T23:57:01+08:00 ] 127.0.0.1 /index.php/admin/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+SQL: SHOW COLUMNS FROM `yx_order` [ RunTime:0.013501s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 1   [ RunTime:0.008471s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 0,15   [ RunTime:0.010427s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 1   [ RunTime:0.004364s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 0,15   [ RunTime:0.003931s ]
+NOTIC: [8] Undefined variable: where D:\PHP\amp\app\Application\Admin\Model\OrderModel.class.php 第 169 行.
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id  LIMIT 1   [ RunTime:0.011501s ]
+SQL: SELECT b.nikename FROM yx_order a LEFT JOIN yx_member b ON a.tomemberid=b.id
+                LEFT JOIN yx_pcd_city c ON a.cityid=c.id
+                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                  WHERE ( a.ordernumber = '' ) OR ( c.CityName = '北京市' ) OR ( d.DistrictName = '' ) LIMIT 0,15   [ RunTime:0.000791s ]
+SQL: SELECT a.*,b.nikename,c.id,d.id FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id
+                                LEFT JOIN yx_pcd_city c ON a.cityid=c.id
+                                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                                  WHERE ( a.ordernumber = '' ) OR ( c.CityName = '北京市' ) OR ( d.DistrictName = '' ) LIMIT 0,15   [ RunTime:0.001219s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+NOTIC: [8] Undefined variable: province D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 68 行.
+NOTIC: [8] Undefined variable: city D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 71 行.
+NOTIC: [8] Undefined variable: county D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008876s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008958s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000806s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000914s ]
+
+[ 2015-08-09T23:58:33+08:00 ] 127.0.0.1 /index.php/admin/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+SQL: SHOW COLUMNS FROM `yx_order` [ RunTime:0.009875s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 1   [ RunTime:0.005594s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.paytime > 1439049600) AND (a.paytime < 1439136000)  ) AND ( a.haspay = '1' ) LIMIT 0,15   [ RunTime:0.005509s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 1   [ RunTime:0.006341s ]
+SQL: SELECT a.* FROM yx_order a WHERE ( (a.publishtime > 1439049600) AND (a.publishtime < 1439136000)  ) LIMIT 0,15   [ RunTime:0.004631s ]
+NOTIC: [8] Undefined variable: where D:\PHP\amp\app\Application\Admin\Model\OrderModel.class.php 第 169 行.
+SQL: SELECT COUNT(*) AS tp_count FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id  LIMIT 1   [ RunTime:0.008519s ]
+SQL: SELECT b.nikename FROM yx_order a LEFT JOIN yx_member b ON a.tomemberid=b.id
+                LEFT JOIN yx_pcd_city c ON a.cityid=c.id
+                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                  WHERE ( a.ordernumber = '' ) OR ( c.CityName = '北京市' ) OR ( d.DistrictName = '' ) LIMIT 0,15   [ RunTime:0.001012s ]
+SQL: SELECT a.*,b.nikename,c.id,d.id FROM yx_order a LEFT JOIN yx_member b ON a.frommemberid=b.id
+                                LEFT JOIN yx_pcd_city c ON a.cityid=c.id
+                                LEFT JOIN yx_pcd_district d ON a.districtid=d.id
+                                  WHERE ( a.ordernumber = '' ) OR ( c.CityName = '北京市' ) OR ( d.DistrictName = '' ) LIMIT 0,15   [ RunTime:0.000902s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+NOTIC: [8] Undefined variable: province D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 68 行.
+NOTIC: [8] Undefined variable: city D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 71 行.
+NOTIC: [8] Undefined variable: county D:\PHP\amp\app\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008920s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008998s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000941s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001040s ]
+
